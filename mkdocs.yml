@@ -1,0 +1,30 @@
+site_name: My Project Documentation
+site_url: https://engine.vrl.sh
+repo_url: https://github.com/itsvrl/engine
+
+theme:
+  name: mkdocs
+  # You can customize the theme or use a different theme like "readthedocs", "material", etc.
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Features: features.md
+  - Contributing: contributing.md
+
+# Optional settings
+markdown_extensions:
+  - toc:
+      permalink: True
+  - admonition
+  - codehilite
+
+# Plugins
+plugins:
+  - search
+
+# Extra configuration
+extra_css:
+  - css/minimal.css
+extra_javascript:
+  - js/minimal.js
