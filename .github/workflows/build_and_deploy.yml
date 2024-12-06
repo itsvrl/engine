@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Python script
       run: |
-        python your_script.py  # Replace with your script
+        python page.py  # Replace with your script
 
     - name: Build site using MkDocs
       run: |
@@ -38,7 +38,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./site
+        publish_dir: ./docs
 
   codeql:
     name: CodeQL
